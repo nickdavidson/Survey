@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Product Request</title>
+</head>
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div id="main">
+
+        
+        
+        <div id="form-container">
+            <h1 id="title">Product Request Form</h1>
+            <p id="description">Thank you for showing interest! If there is a product you would like us to carry, please let us know via the form below.</p>
+            <form id="survey-form">
+                    <div class="row">
+                        <div class="col-25">
+                            <label id="name-label" for="name">Name: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div> 
+                    </div>
+                        
+                    <div class="row">
+                        <div class="col-25">
+                            <label id="email-label" for="email">Email: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="youremail@domain.com" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label id="number-label" for="number">Quantity: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="number" min="1" max="120" placeholder="Maximum 120 bottle order" required>
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                        <p>Purchase Preference: </p>
+                    </div>
+                        <div class="col-75">
+                            <select id="dropdown">
+                                <option value="option1">In-Store Pickup</option>
+                                <option value="option2">Curbside Pickup</option>
+                                <option value="option3">Delivery (includes delivery fees)</option>
+                            </select>
+                        </div>   
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label id="product-label" for="product-desc">Product Name: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="product-desc" name="product-desc" placeholder="Product Name or Description" required>
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <p>Product Type:</p>
+                        </div>
+                        <div class="col-75">
+                            <div>
+                                <input type="radio" id="wine" name="product-type" value="wine">
+                                <label for="wine">Wine</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="liquor" name="product-type" value="liquor">
+                                <label for="wine">Liquor</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" id="other" name="product-type" value="other">
+                                <label for="wine">Other</label>
+                            </div>
+                            
+                        </div>                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                                <label>Additional Details:</label>    
+                        </div>
+                        <div class="col-75">
+                            <textarea name="message" placeholder="Write any additional order details here." rows="10" cols="30" ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                        </div>
+                        <div class="col-75" id="check-fields">
+                            <div>
+                                <input type="checkbox" id="age-check" name="age" value="verifyAge">
+                                <label for="ageVerification">By checking this box, I VERIFY that I will be 21+ years old at the time of purchase.</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="check2" name="check2" value="allowEmail">
+                                <label for="check2">I consent to correspondence from store staff via the provided email address.</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="check3" name="check3" value="Check3">
+                                <label for="check3">Check here to sign up for our mailing list!</label>
+                            </div>
+                            
+                        </div>      
+                    </div>
+
+                    <div class="row submit">
+                        <div>
+                            <input type="submit" id="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div>
+        
+    </body>
+    </html>
